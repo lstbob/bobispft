@@ -1,0 +1,13 @@
+*.o
+*.out
+*.exe
+ohbobispft
+core/tests/test_plan
+core/tests/test_date_utils
+core/tests/test_sanitize
+core/tests/test_storage
+core/tests/test_editor
+renderer/tests/test_grid
+renderer/tests/test_tui
+data/
+compile_commands.json
