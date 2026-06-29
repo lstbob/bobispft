@@ -360,7 +360,8 @@ int cmd_sp(int argc, char *argv[]) {
                 }
                 Date d = prompt_date_default_scope(edit_scope, cursor);
                 PlanKey pkey = plan_key_normalize(edit_scope, d);
-                plan_interactive(pkey, NULL);
+                if (plan_key_exists(pkey)) edit_plan_interactive(pkey);
+                else                        plan_interactive(pkey, NULL);
                 raw_mode_enable();
                 break;
             }
